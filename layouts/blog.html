@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{> meta }}
+</head>
+
+<body>
+  {{> header }}
+
+  <section class="main">
+    {{> me}}
+    
+    {{#each collections.posts}}
+    <article>
+      <h3>{{ title }}</h3>
+      {{{contents}}}
+    </article>
+    {{/each}}
+  </section>
+
+  {{> footer }}
+</body>
+
+</html>
